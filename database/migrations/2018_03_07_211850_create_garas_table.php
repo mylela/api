@@ -15,6 +15,22 @@ class CreateGarasTable extends Migration
     {
         Schema::create('garas', function (Blueprint $table) {
             $table->increments('id');
+
+            $table->string('nome');
+            $table->string('stato');
+            $table->string('url');
+            $table->integer('lunghezza');
+            
+            $table->string('club');
+            $table->string('campionato');
+            $table->date('dataqualifiche');
+            $table->date('datagara');
+            
+
+            $table->string('auto');
+            $table->string('meteo');
+            
+
             $table->timestamps();
         });
     }
