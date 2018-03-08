@@ -20,6 +20,8 @@ class CreateGarasTable extends Migration
             $table->string('stato');
             $table->string('url');
             $table->integer('lunghezza');
+            $table->integer('giri');
+            $table->text('note');
             
             $table->string('club');
             $table->string('campionato');
